@@ -1,0 +1,374 @@
+/*==========================================================
+= ++++++++++++++++++ Teknik Informatika ++++++++++++++++++ =
+= +++++++++++++++++++++ stambuk 2020 +++++++++++++++++++++ =  
+= +++++++++++++++ Universitas Malikussaleh +++++++++++++++ =
+= Our Team:                                                =
+= 1. Adi Prasetyo                                          =
+= 2. Fajar Rivaldi Chan                                    =
+= 3. Firdaus Alfarezy                                      =
+= 4. Ahmat Ramadana Rayyan                                 =
+===========================================================*/
+
+/*action*/
+html {
+	scroll-behavior: smooth;
+}
+
+.judul hr {
+	width: 50px;
+	height: 2px;
+	background-color: #4dc3ff;
+	margin-bottom: 30px;
+}
+
+.card-katalog {
+	border-radius: 30px;
+	border-width: 1px;
+}
+
+.card h5 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+.bg-custom {
+	background-color: #e6f2ff;
+}
+
+.harga {
+	font-size: 18px;
+	color: #505050;
+	font-family: 'Poppins', sans-serif;
+}
+
+.fa-star {
+	color: #e1e1e1;
+}
+
+.checked {
+	color: orange;
+}
+
+/*--------navbar----------*/
+.nav-navbar {
+	background-color: #f8f9fa;
+	;
+}
+
+.nav-navbar.active {
+	background: #f8f9fa;
+	;
+}
+
+.navbar img {
+	width: 220px;
+}
+
+.nav-link {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+
+.nav-icon {
+	font-size: 20px;
+	color: black;
+	margin-top: 10px;
+	padding: 2px 0 2px;
+}
+
+/*------section 1--------*/
+.jumbotron {
+	background-image: url(../assets/img/bg5.jpg);
+	background-size: cover;
+	height: 900px;
+	margin-top: 60px;
+}
+
+.btn-jumbo {
+	padding: 10px 30px 10px 30px;
+
+}
+
+.sec1 {
+	margin-top: 200px;
+}
+
+.display-4 {
+	font-family: 'Nerko One', cursive;
+	font-weight: bold;
+	font-size: 400%;
+
+}
+
+.display-5 {
+	font-family: 'Permanent Marker', cursive;
+	font-style: italic;
+	font-size: 150%;
+}
+
+
+
+/*------section 2--------*/
+.about {
+	text-align: center;
+	margin: 90px 0 90px 0;
+}
+
+
+.quote {
+	margin-top: 100px;
+}
+
+.quote h1 {
+	font-size: 56px;
+	font-weight: 400;
+	font-family: 'Merriweather', serif;
+}
+
+.quote p {
+	color: #909090;
+	font-size: 18px;
+	font-family: 'poppins', sans-serif;
+}
+
+/*------section 3--------*/
+
+.discount h2 {
+	margin-top: 60px;
+	font-family: 'poppins', sans-serif;
+}
+
+.discount img {
+	width: 344px;
+	height: 340px;
+}
+
+.coret {
+	font-size: 16px;
+	color: #909090;
+	text-decoration: line-through #909090;
+}
+
+/* Float Shadow */
+.shadow {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgb(247, 241, 241);
+	position: relative;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	cursor: pointer;
+}
+
+.shadow:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: radial-gradient(ellipse at center, rgba(248, 248, 248, 0.35) 0%, rgba(247, 244, 244, 0) 80%);
+	transition-duration: 0.3s;
+	transition-property: transform, opacity;
+}
+
+.shadow:hover,
+.shadow:focus,
+.shadow:active {
+	transform: translateY(-5px);
+	/* move the element up by 5px */
+}
+
+.shadow:hover:before,
+.shadow:focus:before,
+.shadow:active:before {
+	opacity: 1;
+	transform: translateY(5px);
+	/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.img-container {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+/*------section 4--------*/
+.products h2 {
+	margin-top: 60px;
+	font-family: 'poppins', sans-serif;
+}
+
+.products img {
+	width: 272px;
+	height: 270px;
+}
+
+.products span {
+	font-size: 12px;
+}
+
+.card-pro {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*------section 5--------*/
+
+.contact h2 {
+	margin-top: 60px;
+	font-family: 'poppins', sans-serif;
+}
+
+/*--------footer------*/
+.footer-1 {
+	background-color: #4dc3ff;
+	margin-top: 20px;
+}
+
+.foot {
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+.foot a {
+	color: white;
+}
+
+.foot h5 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+
+/*-----footer2----*/
+.footer-2 {
+	background-color: #33bbff;
+}
+
+.foot-2 {
+	margin-top: 10px;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.nav-navbar {
+		background: transparent;
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+		font-size: 16px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #007bff;
+		width: 50%;
+		margin: auto;
+		padding-top: 5px;
+		margin-bottom: -8px;
+	}
+
+	/*------section 1--------*/
+
+	.jumbotron {
+		margin-top: -10px;
+	}
+
+	/*------section 2--------*/
+	.sec-2 {
+		text-align: right;
+	}
+}
+
+/*--------------------------------------------------------------
+# detail
+--------------------------------------------------------------*/
+
+.detail {
+	margin-top: 100px;
+}
+
+.detail h1 {
+	font-family: 'poppins', sans-serif;
+	font-size: 64px;
+}
+.review hr {
+	height: 1px;
+	background-color: black;
+}
+.card-review {
+	box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+.card-review h4 {
+	font-family: 'poppins', sans-serif;
+}
+/*-----------modal-----------*/
+.modal-content {
+	border-radius: 20px;
+}
+.modal h1 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.modal label {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+/*--------------------------------------------------------------
+# keranjang
+--------------------------------------------------------------*/
+.keranjang {
+	margin-top: 105px;
+	margin-bottom: 90px;
+}
+.keranjang h4 {
+	font-family: 'poppins', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# login
+--------------------------------------------------------------*/
+
+.card-log h1 {
+	font-family: 'poppins', sans-serif;
+	font-size: 42px;
+}
+
+.card-log p {
+	font-family: 'Raleway', sans-serif;
+}
+
+.card-log a {
+	color: #4dc3ff;
+}
+
+.card-log label {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.form {
+	border-radius: 5px;
+	border-color: black;
+	height: 50px;
+}
+
+.btn-form {
+	padding: 6px 40px 6px 40px;
+	border-radius: 8px;
+}
+
+.btn-log {
+	border-radius: 50px;
+	padding: 10px 30px 10px 30px;
+}
